@@ -1,0 +1,136 @@
+/* Basic Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+figcaption,
+ul,
+ol,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global Variables */
+:root {
+  --deep-blue: #1A237E;
+  --vibrant-orange: #FF9800;
+  --light-gray: #ECEFF1;
+  --emerald-green: #43A047;
+  --white: #FFFFFF;
+  --text-dark: #212121; /* Darker text for better contrast */
+  --text-light: #f0f0f0;
+  --background-light: #FFFFFF;
+  --background-dark: #1A237E;
+
+  /* Spacing variables - Significantly increased for balanced whitespace */
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 40px;
+  --spacing-lg: 80px;
+  --spacing-xl: 120px;
+  --spacing-xxl: 180px; /* Even larger for section separation */
+}
+
+/* Base Typography */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif; /* Modern, readable font */
+  line-height: 1.7; /* Slightly increased for better readability */
+  color: var(--text-dark);
+  background-color: var(--background-light);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif; /* Stronger heading font */
+  color: var(--deep-blue);
+  margin-bottom: var(--spacing-sm);
+  line-height: 1.2;
+}
+
+h1 { font-size: 3.5rem; }
+h2 { font-size: 2.8rem; }
+h3 { font-size: 2.2rem; }
+h4 { font-size: 1.8rem; }
+h5 { font-size: 1.4rem; }
+h6 { font-size: 1.1rem; }
+
+p {
+  margin-bottom: var(--spacing-sm);
+}
+
+a {
+  color: var(--deep-blue);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--vibrant-orange);
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: var(--spacing-xl); /* Significantly increased margin below section headings */
+  font-size: 3rem; /* Adjusted for new h2 size */
+  color: var(--deep-blue);
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 30px; /* Increased padding for larger buttons */
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+  border: none;
+  font-size: 1.1rem; /* Slightly larger button text */
+}
+
+.btn:hover {
+  transform: translateY(-3px); /* More noticeable lift */
+}
+
+.btn-primary {
+  background-color: var(--vibrant-orange);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background-color: #e68900; /* Slightly darker orange */
+}
+
+.btn-secondary {
+  background-color: var(--deep-blue);
+  color: var(--white);
+}
+
+.btn-secondary:hover {
+  background-color: #121a5c; /* Slightly darker deep blue */
+}

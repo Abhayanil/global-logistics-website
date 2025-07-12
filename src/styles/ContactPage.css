@@ -1,0 +1,98 @@
+.contact-page {
+  padding-top: var(--spacing-xxl); /* Explicitly set padding-top */
+  padding-bottom: var(--spacing-xxl); /* Explicitly set padding-bottom */
+  background-color: var(--background-light);
+}
+
+.contact-content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dual layout */
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
+}
+
+.contact-info-section p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text-dark);
+  margin-bottom: var(--spacing-lg);
+}
+
+.contact-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-md);
+  text-align: left;
+}
+
+.detail-item {
+  background-color: var(--white);
+  padding: var(--spacing-md);
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.detail-item h3 {
+  color: var(--vibrant-orange);
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.detail-item p {
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+.detail-item a {
+  color: var(--deep-blue);
+  text-decoration: none;
+}
+
+.detail-item a:hover {
+  text-decoration: underline;
+}
+
+.map-section {
+  margin-bottom: var(--spacing-xl);
+}
+
+.map-placeholder {
+  background-color: var(--light-gray);
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+  color: #666;
+  margin-top: var(--spacing-lg);
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.sticky-cta-bar {
+  display: none; /* Hidden by default, shown on mobile */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--deep-blue);
+  padding: var(--spacing-sm);
+  text-align: center;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+.sticky-cta-bar .btn {
+  width: 90%;
+  max-width: 400px;
+}
+
+@media (max-width: 768px) {
+  .contact-content-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .sticky-cta-bar {
+    display: block; /* Show on mobile */
+  }
+}
