@@ -25,12 +25,18 @@ const Hero = () => {
   };
 
   return (
-    <section className="hero">
+    <motion.div
+      className="hero"
+      initial={{ opacity: 0, y: 40 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+    >
       <div className="hero-content container">
         <motion.h1
           variants={containerVariants}
           initial="hidden"
           animate="visible"
+          className="title"
         >
           {sentence.map((word, index) => (
             <motion.span
@@ -46,6 +52,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
+          className="subtitle"
         >
           Your trusted partner for seamless global logistics solutions.
         </motion.p>
@@ -61,7 +68,7 @@ const Hero = () => {
           <Link to="/services" className="btn btn-secondary">Explore Services</Link>
         </motion.div>
       </div>
-    </section>
+    </motion.div>
   );
 };
 

@@ -1,0 +1,40 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  background: linear-gradient(120deg, #1A237E 60%, #FF9800 100%);
+  color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(26,35,126,0.08);
+  padding: 60px 24px;
+  text-align: center;
+}
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+  letter-spacing: -1px;
+}
+.subtitle {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+@media (max-width: 900px) {
+  .title {
+    font-size: 2.2rem;
+  }
+  .hero {
+    padding: 40px 12px;
+  }
+}
+@media (max-width: 600px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  .hero {
+    padding: 24px 4px;
+  }
+}
