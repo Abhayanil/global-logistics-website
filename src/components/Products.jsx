@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import '../styles/Products.css';
+import styles from './Products.module.css';
 
 const Products = () => {
   const cardVariants = {
@@ -14,16 +14,19 @@ const Products = () => {
   };
 
   return (
-    <section className="products container">
-      <motion.h2
-        className="section-heading"
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{ duration: 0.8 }}
-      >
-        Our Product Categories
-      </motion.h2>
+    <motion.div
+      className={styles.products}
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.5 }}
+      transition={{ duration: 0.7 }}
+    >
+      <h2 className={styles.title}>Our Products</h2>
+      <ul className={styles.list}>
+        <li>Real-time Tracking Platform</li>
+        <li>Automated Shipping Calculator</li>
+        <li>Custom Logistics Dashboard</li>
+      </ul>
       <div className="product-categories">
         <motion.div
           className="category-card"
@@ -68,7 +71,7 @@ const Products = () => {
           </div>
         </motion.div>
       </div>
-    </section>
+    </motion.div>
   );
 };
 

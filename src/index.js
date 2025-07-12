@@ -7,7 +7,7 @@ import './styles/global.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/global-logistics-website">
       <App />
     </BrowserRouter>
   </React.StrictMode>
