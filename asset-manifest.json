@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.c13201ef.css",
-    "main.js": "/static/js/main.a86ce69d.js",
-    "index.html": "/index.html",
-    "main.c13201ef.css.map": "/static/css/main.c13201ef.css.map",
-    "main.a86ce69d.js.map": "/static/js/main.a86ce69d.js.map"
+    "main.css": "/global-logistics-website/static/css/main.c13201ef.css",
+    "main.js": "/global-logistics-website/static/js/main.349f07cd.js",
+    "index.html": "/global-logistics-website/index.html",
+    "main.c13201ef.css.map": "/global-logistics-website/static/css/main.c13201ef.css.map",
+    "main.349f07cd.js.map": "/global-logistics-website/static/js/main.349f07cd.js.map"
   },
   "entrypoints": [
     "static/css/main.c13201ef.css",
-    "static/js/main.a86ce69d.js"
+    "static/js/main.349f07cd.js"
   ]
 }
